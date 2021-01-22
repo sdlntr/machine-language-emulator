@@ -1,0 +1,16 @@
+ici: read 1000
+	read 2000
+	push 1000
+	push 2000
+	jpz fin
+	push 2000
+	call func
+	jmp ici
+fin: halt
+func: pop 4998
+	op 8
+	pop 4997
+	write 4997
+	push 4998
+	ret
+	ipush

@@ -1,0 +1,8 @@
+rnd 100
+ici: dup
+read 100
+push 100
+op 6
+jpz fin
+jmp ici
+fin: halt
